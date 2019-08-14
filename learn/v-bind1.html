@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <p>{{msg}}</p>
+  <img v-bind:src="imgUrl" alt="">
+  <a v-bind:href="aUrl">百度</a>
+</div>
+<script>
+  const vm=new Vue({
+    el:'#app',
+    data:{
+      msg:'爱你',
+      imgUrl:'../img/1.jpg',
+      aUrl:'http://www.baidu.com'
+    }
+  })
+</script>
+</body>
+</html>
